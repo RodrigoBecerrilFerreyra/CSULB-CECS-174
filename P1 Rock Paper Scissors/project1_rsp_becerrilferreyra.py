@@ -13,9 +13,7 @@ RPS = ["ROCK", "PAPER", "SCISSORS"]
 while True:
     # getting and parsing user input
     user_choice = input("\nPlease enter your choice of \"Rock\", \"Paper\", or \"Scissors\".\n")
-    # input gets capitalized if at least one character exists
-    if len(user_choice) != 0:
-        user_choice = user_choice.upper()
+    user_choice = user_choice.upper()
     
     # input validation
     # will infini-loop if user does not have the correct input
