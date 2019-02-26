@@ -8,16 +8,13 @@
 import random #for random choice of bot
 
 # RPS is all the possible choices
-RPS = ["R", "P", "S"]
-# For going back to the full names
-RPSDICT = {"R":"Rock", "P": "Paper", "S":"Scissors"}
+RPS = ["ROCK", "PAPER", "SCISSORS"]
 
 while True:
     # getting and parsing user input
-    user_choice = input("\nPlease enter your choice of \"(R)ock\", \"(P)aper\", or \"(S)cissors\".\n")
-    # input gets stripped down to first character if at least one character exists
+    user_choice = input("\nPlease enter your choice of \"Rock\", \"Paper\", or \"Scissors\".\n")
+    # input gets capitalized if at least one character exists
     if len(user_choice) != 0:
-        user_choice = user_choice[0]
         user_choice = user_choice.upper()
     
     # input validation
@@ -32,8 +29,8 @@ while True:
     comp = RPS[random.randint(0, 2)]
 
     # Print both the user input and bot's choice
-    print("Your choice: " + RPSDICT[user_choice])
-    print("Bot's choice: " + RPSDICT[comp])
+    print("Your choice: " + user_choice)
+    print("Bot's choice: " + comp)
 
     # logic
     if comp == user_choice:
