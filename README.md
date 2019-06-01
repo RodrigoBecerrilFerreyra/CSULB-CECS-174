@@ -4,4 +4,4 @@ A collection of projects made for CSULB's CECS 174 class, "Introduction to Progr
 Folders are organized by Project number (P#).
 
 Start date: 2019-12-12
-End date: 
+End date: 2019-05-10
